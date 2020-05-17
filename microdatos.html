@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microdatos y OpenGraph</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Microdatos y OpenGraph</h1>
+    <p><a href="index.html">Retornar a Inicio</a></p>
+<!-- Microdatos son atributos que se le dan al contenido para busqueda -->
+<!-- El navegador Google contesta la busqueda no solo da links -->
+<!-- Schema.org se encuentran los datos estructurados -->
+<!-- https://search.google.com/structured-data/testing-tool?jl=ES se prueba datos -->
+<!--  -->
+
+<article itemscope itemtype="http://schema.org/Blog">
+    <h2>Curso HTML 5.2 en UAM</h2>
+    <p>Este Viernes .....</p>
+    <footer>
+        <p itemprop="author">Arnoldo Angulo</p>
+    </footer>
+</article>
+
+<!-- Open Graph es un protocolo de Facebook -->
+
+<!-- ........................................... -->
+<!-- Tablas en HTML - No para diseñar  -->
+
+<h1>Tablas en HTML</h1>
+<table>
+    <caption>Horario de Clases</caption>
+    <!-- colgroup crea grupos de columnas -->
+    <colgroup>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col style="background: yellow">
+    </colgroup>
+    <thead>
+    <tr>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miercoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td rowspan="2">HTML</td>
+        <td>PHP</td>
+        <td>Python</td>
+        <td rowspan="2">CSS</td>
+        <td>JavaScript</td>
+    </tr>
+    <tr>
+        <td>Go</td>
+        <td>AWK</td>
+        <td>Big Data</td>
+    </tr>
+    <tr>
+        <td colspan="5">Recreo</td>
+    </tr>
+    <tr>
+        <td>Java</td>
+        <td>Excel</td>
+        <td>Word</td>
+        <td>Angular</td>
+        <td>DB</td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr>
+        <td>2 creditos</td>
+        <td>3 creditos</td>
+        <td>5 creditos</td>
+        <td>4 creditos</td>
+        <td>3 creditos</td>
+    </tr>
+</tfoot>
+
+</table>
+
+
+</body>
+</html>

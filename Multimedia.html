@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+
+    <style>
+        video {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <p><a href="index.html">Retornar al Inicio</a></p>
+    <h1>Multimedia en la Web</h1>
+    <p>Codec mas utilizado para Video es H.264</p>
+    <div>
+        <video id="video" src="/video/BatchProgram.mp4" controls poster="/img/montana.jpg"></video>
+       <!-- otras opciones del video son autoplay y poster=""  -->
+    </div>
+    <div>
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+        <script>
+            const video = document.getElementById('video');
+            const play = document.getElementById('play');
+            const pause = document.getElementById('pause');
+
+            play.addEventListener('click', () => {
+                video.play()
+            })
+            pause.addEventListener('click', () => {
+                video.pause()
+            })
+        </script>
+    </div>
+    
+    <audio src="/audio/Audio MP3 converter.mp3" controls></audio>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido Interactivo</title>
+</head>
+<body>
+    <p><a href="index.html">Retornar a Inicio</a></p>
+    
+    <dialog id="modal">
+        <h2>Curso HTML5 Desde Cero</h2>
+        <p>Precio: S/ 134.00</p>
+        <p>Profesor: AAM</p>
+        <button id="close">Cerrar</button>
+    </dialog>
+
+    <button id="button">Abrir Modal</button>
+
+    <h1>Contenido Interactivo</h1>
+    <p>Hay 3 elementos de interactividad</p>
+    <p>details, crea acordeon sin javascript</p>
+    <p>dialog, crea acordeon sin javascript</p>
+    <p>details, crea acordeon sin javascript</p>
+
+    <details>
+        <summary>Información</summary>
+        <p>Lenguaje de marcado de Hipertexto.</p>
+
+    </details>
+
+    <!-- código embebido -->
+    <h1>Código Embebido</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/awmGMY4hbeg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+<!-- Modal página que levanta otra ventana dentro de la misma página -->
+    
+    <script>
+        const modal = document.getElementById('modal');
+        const button = document.getElementById('button');
+        const close = document.getElementById('close');
+
+        button.addEventListener('click', () => {
+            modal.setAttribute('open', 'true')
+        })
+        close.addEventListener('click', () => {
+            modal.removeAttribute('open')
+        })
+        
+    </script>
+
+</body>
+</html>

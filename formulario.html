@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+<h1>Formularios de Usuarios</h1>
+<p><a href="index.html">Retornar a Inicio</a></p>
+
+<!-- cuando se utiliza server php para validar se pone documento php. -->
+<!-- <form action="form.php"> --> 
+<form >
+    <div>
+        <!-- <label for="username">Ingrese su Nombre</label> -->
+        <!-- <input id="username" type="text"> -->
+        <!-- otro ejemplo es PlaceHolder -->
+        <input name="username" type="text" placeholder="Ingrese User Name">
+    </div>
+
+    <div>
+        <label >
+            Ingresar su Contraseña
+        <input id="password" type="password" name="password">
+        </label>
+    </div>
+    <div>
+        <label>Ingresar el email
+            <input type="email" name="email">
+        </label>
+    </div>
+    <div>
+        <label>
+            Fecha de Nacimiento
+            <input type="date">
+        </label>
+    </div>
+    <div>
+        <label>Edad
+            <input type="number">
+        </label>
+    </div>
+    <div>
+        <!-- <button>Enviar</button> --> 
+        <!-- otra forma de hacer un boton es con input -->
+        <input type="submit" value="Iniciar Sesión">
+    </div>
+    
+</form>
+    <script>
+        document.getElementById('password')
+        .addEventListener('keyup', e => {
+            console.log(e.target.value)
+
+        })
+
+    </script>
+</body>
+</html>

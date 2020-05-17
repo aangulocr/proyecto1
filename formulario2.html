@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <input name="username" type="text" placeholder="Ingrese User Name">
+
+            <label >
+                Ingresar su Contraseña
+            <input id="password" type="password" name="password" required>
+            </label>
+
+        </fieldset>
+        <fieldset >
+            <legend>Datos En Plataforma</legend>
+        
+        <div>
+            <label>
+                Fecha de Nacimiento
+                <input type="date">
+            </label>
+        </div>
+        <div>
+            <label>Edad
+                <input type="number">
+            </label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Pasatiempos</legend>
+        <label><input type="checkbox">Cine</label>
+        <label><input type="checkbox">Deporte</label>
+        <label><input type="checkbox">Pintura</label>
+        <label><input type="checkbox">Lectura</label>
+    </fieldset>
+    <fieldset>
+        <legend>Género</legend>
+        <label ><input type="radio" name="gender">Másculino</label>
+        <label ><input type="radio" name="gender">Femenino</label>
+        <label ><input type="radio" name="gender">Prefiero no decir</label>
+    </fieldset>
+    <fieldset>
+        <label >Seleciona un País</label>
+        <select name="country" id="country">
+            <optgroup label="America">
+            <option value="Peru">Peru</option>
+            <option value="CostaRica">Costa Rica</option>
+            <option value="Panama">Panamá</option>
+            <optgroup label="Europa">
+                <option value="Peru">España</option>
+                <option value="Italia">Italia</option>
+        </optgroup>
+        </select>
+    </fieldset>
+        <div>
+            <!-- <button>Enviar</button> --> 
+            <!-- otra forma de hacer un boton es con input -->
+            <input type="submit" value="Iniciar Sesión">
+        </div>
+    </form>
+</body>
+</html>

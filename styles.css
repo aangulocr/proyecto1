@@ -1,0 +1,33 @@
+body{
+    /* background: yellow; */
+}
+h4{
+    font-size: 50px;
+    font-style: italic;
+}
+footer{
+    font-size: smaller;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid #cccccc;
+}
+
+th{
+    border: 1px solid #cccccc ;
+    background: #444;
+    color: #fff;
+}
+
+td, th{
+    padding: 0,5em;
+    text-align: center;
+}
+
+tfoot{
+    background-color: yellow;
+}

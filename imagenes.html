@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información de Images vectoriales y bitmap.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Imagenes</title>
+</head>
+<body>
+<h1>Paginas Web con Imagenes</h1>
+<p><a href="index.html">Retornar a Inicio</a></p>
+<!-- Dos tipos de imagens Bitmap y Vector (Extensión .svg) -->
+<!-- Bitmap para Fotos - SVG para Iconos -->
+<!-- Imagenes PNG pueden tener transparecia y que tenga texto -  -->
+<!--  JPG No excelente Foto -->
+<!-- otro nuevo formato es WebP de Google solo para Chrome -->
+<!-- pagina Giphy buscador de memes/hace Gift animados-->
+<!-- Pagina buena de imagenes Pexels.com libre derecho de autor-->
+
+<p><a href="index.html">Pagina de Inicio</a></p>
+ 
+<!-- <img src="img/chozaenLago.jpeg" alt="Choza en Lago"> -->
+
+<!-- Device Pixel Ratio para tamaño de imagen en Celular / laptop -->
+<!-- Opcipon srcset para dimensionar tamaño de fotografia -->
+<!-- Aumentar y disminuir el tamaño de la pagina zoom -->
+
+<!-- <img src="img/chozaenLago.jpg"
+        srcset="img/foto_avion.jpg 500w , img/montana.jpg 800w"
+> -->
+
+<!-- Otro ejemplo para imagenes es la etiqueta Picture -->
+<picture>
+    <source srcset="img/montana.jpg" media="(min-width: 300px)">
+    <source srcset="img/chozaenlago.jpg" media="(min-width: 200px)">
+    <img src="img/foto_avion.jpg" alt="Foto avion en museo">
+</picture>
+
+
+<script src="javascript.js"></script>
+</body>
+</html>
